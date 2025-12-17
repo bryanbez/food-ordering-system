@@ -1,0 +1,3 @@
+Query 1: create a new nextjs project name food-ordering-system, with installed mongodb, tailwind css and pre built navbar and sidebar (15% width), navbar has user profile, user profile setting button and title and the sidebar has the links (use Link of nextjs) of Home, Foods, Your Cart, Settings and Logout.
+
+Query 2: also, create a log file in root folder to save my queries on this chat.
