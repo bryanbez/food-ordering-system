@@ -1,8 +1,7 @@
 import mongoose from "mongoose";
+import { dbConfig } from "@/app/lib/db/config";
 
-const MONGODB_URI = process.env.MONGO_DB_CREDENTIAL;
-
-if (!MONGODB_URI) {
+if (!dbConfig.uri) {
   throw new Error(
     "Please define the MONGO_DB_CREDENTIAL environment variable inside .env.local"
   );
@@ -31,10 +30,11 @@ async function dbConnect() {
 
   if (!cached.promise) {
     const opts = {
+      dbName: dbConfig.dbName,
       bufferCommands: false,
     };
 
-    cached.promise = mongoose.connect(MONGODB_URI!, opts).then((mongoose) => {
+    cached.promise = mongoose.connect(dbConfig.uri!, opts).then((mongoose) => {
       return mongoose;
     });
   }
