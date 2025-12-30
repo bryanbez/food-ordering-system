@@ -17,7 +17,7 @@ export default function Home() {
 
         {/* Categories & Menu */}
         <section>
-          <CategoryTabs />
+          <CategoryTabs limit={4} layout="slider" />
         </section>
 
         {/* Recommended Products */}

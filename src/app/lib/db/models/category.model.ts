@@ -1,19 +1,21 @@
-import mongoose, { ObjectId } from "mongoose";
+import { Schema, model, models } from "mongoose";
+import type { CategoryDocument } from "@/app/types/categoryType";
 
-export interface CategoryDocument {
-  _id: ObjectId;
-  name: string;
-  description?: string;
-}
-
-const categorySchema = new mongoose.Schema<CategoryDocument>({
-  name: { type: String, required: true },
-  description: { type: String, required: false },
-});
-
-const CategoryQuery = mongoose.model<CategoryDocument>(
-  "Category",
-  categorySchema
+const CategorySchema = new Schema<CategoryDocument>(
+  {
+    id: { type: Number, required: true, unique: true },
+    name: { type: String, required: true },
+    image: { type: String, default: "" },
+    sku: { type: String, required: true },
+    isAvailable: { type: Boolean, required: true, default: true },
+  },
+  {
+    collection: "categories",
+    timestamps: true,
+  }
 );
 
-export default CategoryQuery;
+const CategoryModel =
+  models.Category || model<CategoryDocument>("Category", CategorySchema);
+
+export default CategoryModel;

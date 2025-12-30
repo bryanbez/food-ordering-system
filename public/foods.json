@@ -1,0 +1,1202 @@
+[
+  {
+    "_id": {
+      "$oid": "6ca7b8961e6a4b43b3bf4ec9"
+    },
+    "id": "pqwhsfne9fmh62is",
+    "category": "burgers",
+    "name": "Classic Cheeseburger",
+    "price": 5.99,
+    "description": "Juicy beef patty with cheddar and lettuce.",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "4adc3d8b5e876159d48e478b"
+    },
+    "id": "e496wy1ntksakrtz",
+    "category": "burgers",
+    "name": "Bacon Deluxe Burger",
+    "price": 7.5,
+    "description": "Crispy bacon, BBQ sauce, and onion rings.",
+    "image": "https://images.unsplash.com/photo-1586190848861-99c9574548e3?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "308f65002c04f6f4a56abd5c"
+    },
+    "id": "wfs4sexq0tnynqrn",
+    "category": "burgers",
+    "name": "Mushroom Swiss",
+    "price": 6.99,
+    "description": "Saut\u00e9ed mushrooms and melted Swiss cheese.",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "f84d5c7d02077d9cf0ab7ef9"
+    },
+    "id": "150n40jis5o0evru",
+    "category": "burgers",
+    "name": "Spicy Chicken Burger",
+    "price": 6.5,
+    "description": "Crispy chicken fillet with spicy mayo.",
+    "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "7f29e3b837380ec3f93c69fb"
+    },
+    "id": "vyiop1n2shbc0tlf",
+    "category": "burgers",
+    "name": "Double Patty Smash",
+    "price": 8.99,
+    "description": "Two smashed patties with caramelized onions.",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "a8b6420d33bc6b1cbdd4a31f"
+    },
+    "id": "2munyvy9anowfqtw",
+    "category": "burgers",
+    "name": "Veggie Bean Burger",
+    "price": 5.5,
+    "description": "Black bean patty with avocado slices.",
+    "image": "https://images.unsplash.com/photo-1586190848861-99c9574548e3?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "37a9d15b6ff007766865b81e"
+    },
+    "id": "mljhug8r8olsffan",
+    "category": "burgers",
+    "name": "Aloha Burger",
+    "price": 7.25,
+    "description": "Beef patty topped with grilled pineapple.",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "8c75c616fa755ac79cadcb1c"
+    },
+    "id": "te6dr79n5fzax8pe",
+    "category": "burgers",
+    "name": "Fish Fillet Sandwich",
+    "price": 6.0,
+    "description": "Breaded fish with tartar sauce.",
+    "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "962636f0b03b921fe4a7243e"
+    },
+    "id": "vvrlhpedk6tyuayg",
+    "category": "fries",
+    "name": "Regular Fries",
+    "price": 2.5,
+    "description": "Classic salted shoestring potatoes.",
+    "image": "https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "601f6c2f74d6f5e5a1abd503"
+    },
+    "id": "mx0xykvaxvssmp9g",
+    "category": "fries",
+    "name": "Large Fries",
+    "price": 3.5,
+    "description": "Large serving of crispy fries.",
+    "image": "https://images.unsplash.com/photo-1573080496987-a199f8cd4054?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "0c2abad0b75d9c7baa164d64"
+    },
+    "id": "ly0lbv4mmhvhicxh",
+    "category": "fries",
+    "name": "Cheese Fries",
+    "price": 3.99,
+    "description": "Topped with rich cheddar cheese sauce.",
+    "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "250a3646276212d8d3774ae7"
+    },
+    "id": "qgn9rmhsxxy6erln",
+    "category": "fries",
+    "name": "Sour Cream Fries",
+    "price": 2.75,
+    "description": "Tossed in sour cream and onion powder.",
+    "image": "https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "fceade10b2b8e362b06ad00d"
+    },
+    "id": "veqhis1j30fh9pzb",
+    "category": "fries",
+    "name": "Curly Fries",
+    "price": 3.5,
+    "description": "Seasoned curly cut potatoes.",
+    "image": "https://images.unsplash.com/photo-1573080496987-a199f8cd4054?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "e209e71070f5b400a2b7f52b"
+    },
+    "id": "93hahjih2xcx7byv",
+    "category": "fries",
+    "name": "Truffle Parmesan Fries",
+    "price": 5.5,
+    "description": "Infused with truffle oil and parmesan.",
+    "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "dde99bd5643b9c884be18458"
+    },
+    "id": "10fnc1h1c8kxcwte",
+    "category": "rice meal",
+    "name": "Garlic Pepper Beef",
+    "price": 6.5,
+    "description": "Beef slices in pepper sauce with rice.",
+    "image": "https://images.unsplash.com/photo-1536304993881-ffc028db41e1?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "0145c89a5bcede7c2f6bf2ed"
+    },
+    "id": "ato7u50uywzc4ihu",
+    "category": "rice meal",
+    "name": "Burger Steak",
+    "price": 5.0,
+    "description": "Beef patty with mushroom gravy and rice.",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "dbc777040e2c9065756de5ee"
+    },
+    "id": "yyx4jkhvqtuaf9rk",
+    "category": "rice meal",
+    "name": "Fried Chicken Rice",
+    "price": 5.5,
+    "description": "1pc Chicken served with steamed rice.",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb74b?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "69f6892fbcc261463ac8fd52"
+    },
+    "id": "gxrkiydmjoif5kzr",
+    "category": "rice meal",
+    "name": "Sisig Bowl",
+    "price": 6.5,
+    "description": "Sizzling pork sisig with egg and rice.",
+    "image": "https://images.unsplash.com/photo-1536304993881-ffc028db41e1?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "a01b3da94c47e6f354a8f16c"
+    },
+    "id": "s18nsjphkwaa3fia",
+    "category": "rice meal",
+    "name": "Sweet & Sour Pork",
+    "price": 6.5,
+    "description": "Pork chunks in sweet glaze with rice.",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "461db29b6b7bdedba2552e38"
+    },
+    "id": "902cdmsdw38rqb46",
+    "category": "rice meal",
+    "name": "Beef Tapa",
+    "price": 7.0,
+    "description": "Cured beef with garlic fried rice and egg.",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb74b?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "9d14c56463cafde450fbadc1"
+    },
+    "id": "h7cct8bupgnffje3",
+    "category": "rice meal",
+    "name": "Java Rice Platter",
+    "price": 3.0,
+    "description": "Fried yellow rice with garlic bits.",
+    "image": "https://images.unsplash.com/photo-1536304993881-ffc028db41e1?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "a2937db56c18a9560ebd0957"
+    },
+    "id": "3mkpwigkpfxdjesh",
+    "category": "rice meal",
+    "name": "Shrimp & Garlic",
+    "price": 8.0,
+    "description": "Buttered shrimp over steamed rice.",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "8d3a96cad65c124fc5a6dff7"
+    },
+    "id": "5qi9ahk37v1nkone",
+    "category": "pasta",
+    "name": "Creamy Carbonara",
+    "price": 7.25,
+    "description": "White sauce pasta with bacon bits.",
+    "image": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "1edd7462f68c38f4a116eb7a"
+    },
+    "id": "dhrc8ejnwdbfjt8m",
+    "category": "pasta",
+    "name": "Spaghetti Bolognese",
+    "price": 6.5,
+    "description": "Classic tomato meat sauce.",
+    "image": "https://images.unsplash.com/photo-1551183053-bf91b1dca034?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "b99b1b256e05c95591b9f5ea"
+    },
+    "id": "x36789v9ugjtfjmm",
+    "category": "pasta",
+    "name": "Chicken Alfredo",
+    "price": 7.5,
+    "description": "Fettuccine with grilled chicken.",
+    "image": "https://images.unsplash.com/photo-1612874742237-98280d20743b?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "fe9e1023225d0c30bb526453"
+    },
+    "id": "4p6lp5ck04whocpw",
+    "category": "pasta",
+    "name": "Baked Lasagna",
+    "price": 8.5,
+    "description": "Layers of meat, cheese, and pasta.",
+    "image": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "0913794b5b87ed8aa7d9c22d"
+    },
+    "id": "xmsz5jzmwuov879p",
+    "category": "pasta",
+    "name": "Pesto Penne",
+    "price": 6.75,
+    "description": "Basil pesto sauce with olive oil.",
+    "image": "https://images.unsplash.com/photo-1551183053-bf91b1dca034?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "9ca61dd8ad9ac979aefed22d"
+    },
+    "id": "rf0htjsdqzzy4xj3",
+    "category": "pasta",
+    "name": "Mac & Cheese",
+    "price": 5.0,
+    "description": "Cheesy macaroni comfort food.",
+    "image": "https://images.unsplash.com/photo-1612874742237-98280d20743b?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "b5954c073a9a07bcc228edb5"
+    },
+    "id": "f91lpmvq0c735nmi",
+    "category": "pasta",
+    "name": "Spicy Tuna Pasta",
+    "price": 6.25,
+    "description": "Oil-based pasta with spicy tuna.",
+    "image": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "6eb8912f255153804a67d1f9"
+    },
+    "id": "skty9fzkzwjlpmfg",
+    "category": "drinks",
+    "name": "Iced Caramel Macchiato",
+    "price": 3.75,
+    "description": "Espresso, milk, and caramel drizzle.",
+    "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "8faa98b5c5d541fd4852d15e"
+    },
+    "id": "5u05ug672q3l16fr",
+    "category": "drinks",
+    "name": "Coke Original",
+    "price": 1.5,
+    "description": "Chilled soda.",
+    "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "938b30e0f9eb357e6203daaf"
+    },
+    "id": "c9kebns2oog2n8is",
+    "category": "drinks",
+    "name": "House Iced Tea",
+    "price": 1.75,
+    "description": "Freshly brewed lemon iced tea.",
+    "image": "https://images.unsplash.com/photo-1497515114629-f71d768fd61c?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "f186b06f5a41619a65596848"
+    },
+    "id": "ucps8lr8le9mt097",
+    "category": "drinks",
+    "name": "Hot Brewed Coffee",
+    "price": 2.0,
+    "description": "Strong black coffee.",
+    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "a13aa4aa9560c4cd407c86f4"
+    },
+    "id": "gz5cpjm2z4fhgxhd",
+    "category": "drinks",
+    "name": "Iced Latte",
+    "price": 3.5,
+    "description": "Espresso with cold milk.",
+    "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "4045fe81a6d3315d4d6d0f64"
+    },
+    "id": "vkr5h3atpzo04koy",
+    "category": "drinks",
+    "name": "Mango Shake",
+    "price": 3.5,
+    "description": "Fresh mango blended with ice.",
+    "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "a0f719f289c1d77ec40dca8c"
+    },
+    "id": "gxrb7ei76bsx8548",
+    "category": "drinks",
+    "name": "Orange Juice",
+    "price": 2.5,
+    "description": "Freshly squeezed.",
+    "image": "https://images.unsplash.com/photo-1497515114629-f71d768fd61c?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "38427f7137f48fbbbad0f47b"
+    },
+    "id": "2z1fevfrh2i34m7x",
+    "category": "drinks",
+    "name": "Bottled Water",
+    "price": 1.0,
+    "description": "Purified water.",
+    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "f22ede909f1cf4d4f82d3b9a"
+    },
+    "id": "h7d5adv263tu2pir",
+    "category": "drinks",
+    "name": "Mocha Frappe",
+    "price": 4.5,
+    "description": "Chocolate coffee blend.",
+    "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "ec21402e55266913c8440885"
+    },
+    "id": "6r66qscl1z1pt6ul",
+    "category": "desserts",
+    "name": "Chocolate Lava Cake",
+    "price": 4.5,
+    "description": "Warm cake with molten center.",
+    "image": "https://images.unsplash.com/photo-1551024601-564d6e67e256?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "e8f8333b4b0468869c5ad600"
+    },
+    "id": "xna6zv33aly5fkju",
+    "category": "desserts",
+    "name": "Vanilla Sundae",
+    "price": 2.5,
+    "description": "Soft serve with chocolate syrup.",
+    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "721c8547c12a6e73afe7643b"
+    },
+    "id": "vc23kp89kn4yvgwt",
+    "category": "desserts",
+    "name": "Apple Pie",
+    "price": 3.0,
+    "description": "Warm pastry with cinnamon apples.",
+    "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "adeba8e7854f1b5f37e51c7d"
+    },
+    "id": "47mweymzbbflgdq9",
+    "category": "desserts",
+    "name": "Cheesecake Slice",
+    "price": 4.5,
+    "description": "Classic New York style.",
+    "image": "https://images.unsplash.com/photo-1551024601-564d6e67e256?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "a11dd6bfea9e78c2995ed07a"
+    },
+    "id": "etsjepmuon27slh8",
+    "category": "desserts",
+    "name": "Fudgy Brownie",
+    "price": 2.0,
+    "description": "Rich chocolate square.",
+    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "490a93c9d0a1149418a6f4c2"
+    },
+    "id": "47lvrs9tq7q4gghz",
+    "category": "desserts",
+    "name": "Leche Flan",
+    "price": 3.5,
+    "description": "Caramel custard pudding.",
+    "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "99a8d0365b93beeb7932bc79"
+    },
+    "id": "61kgomh20ipaj1cj",
+    "category": "chicken dish",
+    "name": "1pc Fried Chicken",
+    "price": 3.0,
+    "description": "Crispy golden chicken.",
+    "image": "https://images.unsplash.com/photo-1606755456863-1930b8500436?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "87f63ef1d73a8c5df3dd50bb"
+    },
+    "id": "undvs2fqsf4o1kzy",
+    "category": "chicken dish",
+    "name": "2pc Fried Chicken",
+    "price": 5.5,
+    "description": "Two pieces of crispy chicken.",
+    "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "1f3b4ad88c4e89e5fd6876bf"
+    },
+    "id": "8pzroeik8d7qnz7p",
+    "category": "chicken dish",
+    "name": "6pc Bucket",
+    "price": 15.0,
+    "description": "Family size bucket of chicken.",
+    "image": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "bfb249f3b0184611ef6f05b7"
+    },
+    "id": "14btws2ztnrshqsf",
+    "category": "chicken dish",
+    "name": "Buffalo Wings (6pc)",
+    "price": 7.0,
+    "description": "Spicy buffalo sauce wings.",
+    "image": "https://images.unsplash.com/photo-1606755456863-1930b8500436?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "4f0fe05e1f0fcabf3d806603"
+    },
+    "id": "oc9ljf8w0x9tmyms",
+    "category": "chicken dish",
+    "name": "Soy Garlic Wings (6pc)",
+    "price": 7.5,
+    "description": "Sweet and savory Korean style.",
+    "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "d999c782274dfea0738ae8a8"
+    },
+    "id": "25os3ofaa34c7paq",
+    "category": "chicken dish",
+    "name": "Chicken Tenders",
+    "price": 4.5,
+    "description": "Boneless breaded strips.",
+    "image": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "ac459b8e08a58ec9da5233a3"
+    },
+    "id": "wqkren0sscme2wvr",
+    "category": "chicken dish",
+    "name": "Chicken Nuggets",
+    "price": 3.5,
+    "description": "6 pieces of nuggets with dip.",
+    "image": "https://images.unsplash.com/photo-1606755456863-1930b8500436?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "01db3e6471254dbc7ef90f5d"
+    },
+    "id": "bwzn2m2pq6r3dh3d",
+    "category": "add-ons",
+    "name": "Honey Mustard",
+    "price": 0.75,
+    "description": "Sweet and tangy dip.",
+    "image": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "e2dbb15fc11c5460d8707c12"
+    },
+    "id": "faym12bntdtzlgu1",
+    "category": "add-ons",
+    "name": "Extra Gravy",
+    "price": 0.5,
+    "description": "Savory house gravy.",
+    "image": "https://images.unsplash.com/photo-1619881589316-56c7f9e6b587?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "31e3032361475130b085782b"
+    },
+    "id": "ezdjfg7cseyhf6tw",
+    "category": "add-ons",
+    "name": "Steamed Rice",
+    "price": 1.0,
+    "description": "Extra serving of white rice.",
+    "image": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "066284091a90242ad18fa34a"
+    },
+    "id": "x4ntceligmsmrk7x",
+    "category": "add-ons",
+    "name": "Fried Egg",
+    "price": 0.75,
+    "description": "Sunny-side up.",
+    "image": "https://images.unsplash.com/photo-1619881589316-56c7f9e6b587?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "5b28d00b3146b0ad678db118"
+    },
+    "id": "cztblaolgf8lcvdb",
+    "category": "add-ons",
+    "name": "Cheese Slice",
+    "price": 0.5,
+    "description": "American cheese.",
+    "image": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "20f89b81f6c804e25b2a2a0e"
+    },
+    "id": "hnxhkm2o9xh9r3ds",
+    "category": "add-ons",
+    "name": "Garlic Mayo",
+    "price": 0.75,
+    "description": "Creamy garlic sauce.",
+    "image": "https://images.unsplash.com/photo-1619881589316-56c7f9e6b587?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "f265d7d4e134df705040e09e"
+    },
+    "id": "ushgn6alsync8iib",
+    "category": "burgers",
+    "name": "Classic Cheeseburger",
+    "price": 5.99,
+    "description": "Juicy beef patty with cheddar and lettuce.",
+    "image": "https://images.unsplash.com/photo-1586190848861-99c9574548e3?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "c318a684fd04a622885ab1b7"
+    },
+    "id": "ihv5x6i96xv7qekd",
+    "category": "burgers",
+    "name": "Bacon Deluxe Burger",
+    "price": 7.5,
+    "description": "Crispy bacon, BBQ sauce, and onion rings.",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "41d887074b0461ff4e790ea4"
+    },
+    "id": "jcyli1smnabth8r0",
+    "category": "burgers",
+    "name": "Mushroom Swiss",
+    "price": 6.99,
+    "description": "Saut\u00e9ed mushrooms and melted Swiss cheese.",
+    "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "9fd535c93095529844fcd331"
+    },
+    "id": "mvr3lxmycbjed2ab",
+    "category": "burgers",
+    "name": "Spicy Chicken Burger",
+    "price": 6.5,
+    "description": "Crispy chicken fillet with spicy mayo.",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "935b69f5f6b3dac1e104e0d0"
+    },
+    "id": "acnek06zoegg2x7k",
+    "category": "burgers",
+    "name": "Double Patty Smash",
+    "price": 8.99,
+    "description": "Two smashed patties with caramelized onions.",
+    "image": "https://images.unsplash.com/photo-1586190848861-99c9574548e3?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "353b6ac41746c9dc3e4b88c2"
+    },
+    "id": "gfh470ycir68mxq5",
+    "category": "burgers",
+    "name": "Veggie Bean Burger",
+    "price": 5.5,
+    "description": "Black bean patty with avocado slices.",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "e4a2300e9cf22bedc2649bfc"
+    },
+    "id": "u96p7899y0qh5c0b",
+    "category": "burgers",
+    "name": "Aloha Burger",
+    "price": 7.25,
+    "description": "Beef patty topped with grilled pineapple.",
+    "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "1bf0917905ed80b13bf16106"
+    },
+    "id": "sck4bxfmnyer5nbm",
+    "category": "burgers",
+    "name": "Fish Fillet Sandwich",
+    "price": 6.0,
+    "description": "Breaded fish with tartar sauce.",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "161b89a4a1098f87996078dd"
+    },
+    "id": "eue8xoq0h60bg1iz",
+    "category": "fries",
+    "name": "Regular Fries",
+    "price": 2.5,
+    "description": "Classic salted shoestring potatoes.",
+    "image": "https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "703d71c7f765b16640d37be1"
+    },
+    "id": "5fnx5phmg0im4twr",
+    "category": "fries",
+    "name": "Large Fries",
+    "price": 3.5,
+    "description": "Large serving of crispy fries.",
+    "image": "https://images.unsplash.com/photo-1573080496987-a199f8cd4054?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "04464c2a291a14d2a3b1a8aa"
+    },
+    "id": "wwss7udl98wrefqp",
+    "category": "fries",
+    "name": "Cheese Fries",
+    "price": 3.99,
+    "description": "Topped with rich cheddar cheese sauce.",
+    "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "63d0bc44313c39147ba5a543"
+    },
+    "id": "4xobi20ekgxg5hxd",
+    "category": "fries",
+    "name": "Sour Cream Fries",
+    "price": 2.75,
+    "description": "Tossed in sour cream and onion powder.",
+    "image": "https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "d9fbee4ebb35fc57e59420fb"
+    },
+    "id": "4ktw61jhy9q5442e",
+    "category": "fries",
+    "name": "Curly Fries",
+    "price": 3.5,
+    "description": "Seasoned curly cut potatoes.",
+    "image": "https://images.unsplash.com/photo-1573080496987-a199f8cd4054?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "bb545a116239ae9596e90cfa"
+    },
+    "id": "0p0bkx9cu7yjx14m",
+    "category": "fries",
+    "name": "Truffle Parmesan Fries",
+    "price": 5.5,
+    "description": "Infused with truffle oil and parmesan.",
+    "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "4f0097bd5f2e1eac69116a94"
+    },
+    "id": "s06f8kd8esvx1yac",
+    "category": "rice meal",
+    "name": "Garlic Pepper Beef",
+    "price": 6.5,
+    "description": "Beef slices in pepper sauce with rice.",
+    "image": "https://images.unsplash.com/photo-1536304993881-ffc028db41e1?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "d15e6b98e0eeef1de611788b"
+    },
+    "id": "63thkxjfoingcpl4",
+    "category": "rice meal",
+    "name": "Burger Steak",
+    "price": 5.0,
+    "description": "Beef patty with mushroom gravy and rice.",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "068d8774f1140c83d614e1d2"
+    },
+    "id": "04khbgyakcmi6qu8",
+    "category": "rice meal",
+    "name": "Fried Chicken Rice",
+    "price": 5.5,
+    "description": "1pc Chicken served with steamed rice.",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb74b?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "7e156954995e29b4e7b7fc2b"
+    },
+    "id": "f14pq3cf38ox3v0q",
+    "category": "rice meal",
+    "name": "Sisig Bowl",
+    "price": 6.5,
+    "description": "Sizzling pork sisig with egg and rice.",
+    "image": "https://images.unsplash.com/photo-1536304993881-ffc028db41e1?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "167d2cc28f0f3fb4908f3f12"
+    },
+    "id": "bwg9pqmq1o46tv59",
+    "category": "rice meal",
+    "name": "Sweet & Sour Pork",
+    "price": 6.5,
+    "description": "Pork chunks in sweet glaze with rice.",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "1f9d20690f9b71808dc55d2a"
+    },
+    "id": "kplh2ddge1yvhfz4",
+    "category": "rice meal",
+    "name": "Beef Tapa",
+    "price": 7.0,
+    "description": "Cured beef with garlic fried rice and egg.",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb74b?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "bf430839a491e310371d985d"
+    },
+    "id": "zx7keeqxc25g1v3n",
+    "category": "rice meal",
+    "name": "Java Rice Platter",
+    "price": 3.0,
+    "description": "Fried yellow rice with garlic bits.",
+    "image": "https://images.unsplash.com/photo-1536304993881-ffc028db41e1?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "d56d5211e2cc654119ac04fe"
+    },
+    "id": "dhpl4byhxlutx5bm",
+    "category": "rice meal",
+    "name": "Shrimp & Garlic",
+    "price": 8.0,
+    "description": "Buttered shrimp over steamed rice.",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "1c50c18ea4732c7c26cfba7c"
+    },
+    "id": "o5bc08s0on2e61ei",
+    "category": "pasta",
+    "name": "Creamy Carbonara",
+    "price": 7.25,
+    "description": "White sauce pasta with bacon bits.",
+    "image": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "fc5e87d229e7764c15582442"
+    },
+    "id": "3r78zild4zqquw02",
+    "category": "pasta",
+    "name": "Spaghetti Bolognese",
+    "price": 6.5,
+    "description": "Classic tomato meat sauce.",
+    "image": "https://images.unsplash.com/photo-1551183053-bf91b1dca034?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "45bd282946418a416f87d4ab"
+    },
+    "id": "9s70cmvlw5dad0ro",
+    "category": "pasta",
+    "name": "Chicken Alfredo",
+    "price": 7.5,
+    "description": "Fettuccine with grilled chicken.",
+    "image": "https://images.unsplash.com/photo-1612874742237-98280d20743b?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "a51e616d17adaa005c95de45"
+    },
+    "id": "244een5hwyrkd8zf",
+    "category": "pasta",
+    "name": "Baked Lasagna",
+    "price": 8.5,
+    "description": "Layers of meat, cheese, and pasta.",
+    "image": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "109771539e482e95481b495f"
+    },
+    "id": "96mpl6dwgb1zr81x",
+    "category": "pasta",
+    "name": "Pesto Penne",
+    "price": 6.75,
+    "description": "Basil pesto sauce with olive oil.",
+    "image": "https://images.unsplash.com/photo-1551183053-bf91b1dca034?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "50696fd74a030ddbc827a49d"
+    },
+    "id": "druu1t2smsgpr7oa",
+    "category": "pasta",
+    "name": "Mac & Cheese",
+    "price": 5.0,
+    "description": "Cheesy macaroni comfort food.",
+    "image": "https://images.unsplash.com/photo-1612874742237-98280d20743b?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "87ee86c6c1d0f3288b203511"
+    },
+    "id": "8v9brf2svkq0693t",
+    "category": "pasta",
+    "name": "Spicy Tuna Pasta",
+    "price": 6.25,
+    "description": "Oil-based pasta with spicy tuna.",
+    "image": "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "5e30e6b2f92faef15f2f090f"
+    },
+    "id": "zb2uexrcl35y4hwm",
+    "category": "drinks",
+    "name": "Iced Caramel Macchiato",
+    "price": 3.75,
+    "description": "Espresso, milk, and caramel drizzle.",
+    "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "69a59cfd2343db5c6601a091"
+    },
+    "id": "8lpck32mb325ij21",
+    "category": "drinks",
+    "name": "Coke Original",
+    "price": 1.5,
+    "description": "Chilled soda.",
+    "image": "https://images.unsplash.com/photo-1497515114629-f71d768fd61c?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "436b34e169c6bf6a34cde891"
+    },
+    "id": "rvkivaqndyzl7753",
+    "category": "drinks",
+    "name": "House Iced Tea",
+    "price": 1.75,
+    "description": "Freshly brewed lemon iced tea.",
+    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "0608aac9aba6892b3b84ef63"
+    },
+    "id": "3zaydhyiddzao0qj",
+    "category": "drinks",
+    "name": "Hot Brewed Coffee",
+    "price": 2.0,
+    "description": "Strong black coffee.",
+    "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "8454736f5c48f52660975629"
+    },
+    "id": "1d35pp6x1qiow98d",
+    "category": "drinks",
+    "name": "Iced Latte",
+    "price": 3.5,
+    "description": "Espresso with cold milk.",
+    "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "6a4cc035044eabb501d30c2a"
+    },
+    "id": "jfr9wha15ost68o4",
+    "category": "drinks",
+    "name": "Mango Shake",
+    "price": 3.5,
+    "description": "Fresh mango blended with ice.",
+    "image": "https://images.unsplash.com/photo-1497515114629-f71d768fd61c?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "a95aaa42e26a576ecf53373b"
+    },
+    "id": "7wltwbq0nu6vh9bq",
+    "category": "drinks",
+    "name": "Orange Juice",
+    "price": 2.5,
+    "description": "Freshly squeezed.",
+    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "d54c7f053aaa2c29ec5f4762"
+    },
+    "id": "uzybss54gd244uq6",
+    "category": "drinks",
+    "name": "Bottled Water",
+    "price": 1.0,
+    "description": "Purified water.",
+    "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "4b75dd47eb0e3d809d6daa00"
+    },
+    "id": "eubunnj85s7yfrlk",
+    "category": "drinks",
+    "name": "Mocha Frappe",
+    "price": 4.5,
+    "description": "Chocolate coffee blend.",
+    "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "04f044e49f3759ba37640416"
+    },
+    "id": "myh5eej27kgusu4g",
+    "category": "desserts",
+    "name": "Chocolate Lava Cake",
+    "price": 4.5,
+    "description": "Warm cake with molten center.",
+    "image": "https://images.unsplash.com/photo-1551024601-564d6e67e256?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "d7062746cc7f740a93bb1bb7"
+    },
+    "id": "13l89ali34x75ae3",
+    "category": "desserts",
+    "name": "Vanilla Sundae",
+    "price": 2.5,
+    "description": "Soft serve with chocolate syrup.",
+    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "33896a3ea6fb072477d7a975"
+    },
+    "id": "6nzcs6zngnl59bw0",
+    "category": "desserts",
+    "name": "Apple Pie",
+    "price": 3.0,
+    "description": "Warm pastry with cinnamon apples.",
+    "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "8b8bdf0b0cb392ba7f2602a2"
+    },
+    "id": "oowr7s81k5nfi8ac",
+    "category": "desserts",
+    "name": "Cheesecake Slice",
+    "price": 4.5,
+    "description": "Classic New York style.",
+    "image": "https://images.unsplash.com/photo-1551024601-564d6e67e256?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  },
+  {
+    "_id": {
+      "$oid": "babd426334a3a822ec2cd93b"
+    },
+    "id": "z5vpxxp57qvxu86k",
+    "category": "desserts",
+    "name": "Fudgy Brownie",
+    "price": 2.0,
+    "description": "Rich chocolate square.",
+    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=60",
+    "isAvailable": true
+  }
+]

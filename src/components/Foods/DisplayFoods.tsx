@@ -7,15 +7,15 @@ import useCategories from "@/app/hooks/useCategories";
 import useFoods from "@/app/hooks/useFoods";
 import { checkFoodCategoryHasItem } from "@/app/lib/utils/checkFoodCategoryHasItem";
 
-interface CategoryTabsProps {
+interface DisplayFoodsProps {
   limit?: number;
   layout?: "grid" | "slider";
 }
 
-export default function CategoryTabs({
+export default function DisplayFoods({
   limit,
   layout = "grid",
-}: CategoryTabsProps) {
+}: DisplayFoodsProps) {
   const { categories } = useCategories();
   const { foods } = useFoods();
 

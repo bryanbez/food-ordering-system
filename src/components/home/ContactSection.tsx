@@ -13,8 +13,8 @@ export default function ContactSection() {
               Get in Touch
             </h2>
             <p className="text-gray-600 text-lg">
-              Have questions or feedback? We'd love to hear from you. Reach out
-              to us using any of the methods below.
+              Have questions or feedback? We love to hear from you. Reach out to
+              us using any of the methods below.
             </p>
           </div>
 

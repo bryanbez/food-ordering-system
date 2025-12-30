@@ -1,5 +1,5 @@
 import FoodModel from "../models/food.model";
-import { type FoodDocument } from "../models/food.model";
+import type { FoodDocument } from "../../../types/foodType";
 
 export async function getAllFoodsQuery() {
   try {
@@ -14,7 +14,9 @@ export async function getAllFoodsQuery() {
 
 export async function getFoodByIdQuery(id: string) {
   try {
-    const food = await FoodModel.findById(id);
+    console.log(`[Repo] Fetching food with custom id: "${id}"`);
+    const food = await FoodModel.findOne({ id: id });
+    console.log(`[Repo] Found food:`, food);
     return food;
   } catch (error) {
     console.error("Error fetching food by ID:", error);
@@ -34,7 +36,9 @@ export async function createFoodQuery(foodData: FoodDocument) {
 
 export async function updateFoodQuery(id: string, foodData: FoodDocument) {
   try {
-    const food = await FoodModel.findByIdAndUpdate(id, foodData, { new: true });
+    const food = await FoodModel.findOneAndUpdate({ id: id }, foodData, {
+      new: true,
+    });
     return food;
   } catch (error) {
     console.error("Error updating food:", error);
@@ -46,7 +50,7 @@ export async function deleteFoodQuery(
   id: string
 ): Promise<FoodDocument | null> {
   try {
-    const food = await FoodModel.findByIdAndDelete(id);
+    const food = await FoodModel.findOneAndDelete({ id: id });
     return food;
   } catch (error) {
     console.error("Error deleting food:", error);

@@ -1,5 +1,5 @@
 import * as foodRepo from "../repositories/food.repo";
-import { type FoodDocument } from "../models/food.model";
+import type { FoodDocument } from "@/app/types/foodType";
 
 export async function getAllFoodsService() {
   try {

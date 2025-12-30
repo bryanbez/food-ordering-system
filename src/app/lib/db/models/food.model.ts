@@ -1,19 +1,15 @@
-import { Schema, model, models, ObjectId } from "mongoose";
+import { Schema, model, models } from "mongoose";
+import type { FoodDocument } from "@/app/types/foodType";
 
-export interface FoodDocument {
-  _id: ObjectId;
-  name: string;
-  description?: string;
-  price: number;
-  image: string;
-  category?: string;
-  isAvailable: boolean;
-  createdAt: Date;
-  updatedAt: Date;
+// Prevent Mongoose OverwriteModelError by deleting the model if it exists
+// This is necessary because we changed the schema but the server wasn't restarted
+if (models.Food) {
+  delete models.Food;
 }
 
 const FoodSchema = new Schema<FoodDocument>(
   {
+    id: { type: String, required: true, unique: true },
     name: { type: String, required: true },
     description: { type: String, required: false },
     price: { type: Number, required: true },

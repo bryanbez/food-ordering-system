@@ -1,0 +1,67 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Burgers",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1299&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "sku": "burgers",
+      "isAvailable": true
+    },
+    {
+      "id": 2,
+      "name": "Fries",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1299&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "sku": "fries",
+      "isAvailable": true
+    },
+    {
+      "id": 3,
+      "name": "Rice Meals",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1299&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "sku": "rice-meals",
+      "isAvailable": true
+    },
+    {
+      "id": 5,
+      "name": "Pasta",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1299&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "sku": "pasta",
+      "isAvailable": true
+    },
+    {
+      "id": 6,
+      "name": "Drinks",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1299&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "sku": "drinks",
+      "isAvailable": true
+    },
+    {
+      "id": 7,
+      "name": "Desserts",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1299&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "sku": "desserts",
+      "isAvailable": true
+    },
+    {
+      "id": 8,
+      "name": "Combo Meals",
+      "image": "",
+      "sku": "combo-meals",
+      "isAvailable": false
+    },
+    {
+      "id": 9,
+      "name": "Add-Ons",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1299&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "sku": "add-ons",
+      "isAvailable": false
+    },
+    {
+      "id": 10,
+      "name": "Chicken Dish",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1299&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "sku": "chicken-dish",
+      "isAvailable": true
+    }
+  ]
+}
