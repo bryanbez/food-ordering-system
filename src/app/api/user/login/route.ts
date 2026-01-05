@@ -27,13 +27,20 @@ export async function POST(request: NextRequest) {
       expiresIn: "3d",
     });
 
-    const response = NextResponse.json({ message: "Login successful" });
+    const response = NextResponse.json({
+      message: "Login successful",
+      user: {
+        _id: user._id,
+        email: user.email,
+      },
+    });
     response.cookies.set("loginToken", token, {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
       sameSite: "strict",
       maxAge: 60 * 60 * 24 * 3, // 3 days
     });
+
     return response;
   } catch (error: unknown) {
     let errorMessage = "Invalid email or password";

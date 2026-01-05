@@ -10,6 +10,7 @@ import { checkFoodCategoryHasItem } from "@/app/lib/utils/checkFoodCategoryHasIt
 interface DisplayFoodsProps {
   limit?: number;
   layout?: "grid" | "slider";
+  userId?: string;
 }
 
 export default function DisplayFoods({

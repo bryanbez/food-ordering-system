@@ -35,12 +35,13 @@ function LoginForm() {
         },
         body: JSON.stringify(formData),
       });
+      const data = await res.json();
 
       if (!res.ok) {
-        const data = await res.json();
         throw new Error(data.error || "Invalid credentials");
       }
 
+      localStorage.setItem("userInfo", JSON.stringify(data.user));
       router.push("/");
     } catch (err: Error | unknown) {
       setError(err instanceof Error ? err.message : "Something went wrong");
