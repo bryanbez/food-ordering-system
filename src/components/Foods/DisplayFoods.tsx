@@ -23,6 +23,13 @@ export default function DisplayFoods({
   const [activeTab, setActiveTab] = useState<string>(
     categories?.[0]?.sku || "burgers"
   );
+  const [erroredImages, setErroredImages] = useState<Record<string, boolean>>(
+    {}
+  );
+
+  const handleImageError = (id: string) => {
+    setErroredImages((prev) => ({ ...prev, [id]: true }));
+  };
 
   const filteredCategories = checkFoodCategoryHasItem(foods, categories);
 
@@ -75,7 +82,12 @@ export default function DisplayFoods({
                 <div className="relative aspect-square mb-4 rounded-xl overflow-hidden bg-gray-50">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={food.image || "/placeholder.png"}
+                    src={
+                      erroredImages[food.id]
+                        ? "/foodplaceholder.png"
+                        : food.image || "/foodplaceholder.png"
+                    }
+                    onError={() => handleImageError(food.id)}
                     alt={food.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />

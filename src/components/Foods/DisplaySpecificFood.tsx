@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { FoodDocument } from "@/app/types/foodType";
+import { useCart } from "@/app/hooks/useCart";
 
 interface DisplaySpecificFoodProps {
   food: FoodDocument | null;
@@ -27,6 +28,7 @@ export default function DisplaySpecificFood({
   const router = useRouter();
   const [quantity, setQuantity] = useState(1);
   const [isAdded, setIsAdded] = useState(false);
+  const { addToCart } = useCart();
 
   const handleQuantityId = (type: "inc" | "dec") => {
     if (type === "dec" && quantity > 1) setQuantity((q) => q - 1);
@@ -34,9 +36,10 @@ export default function DisplaySpecificFood({
   };
 
   const handleAddToCart = () => {
+    if (!food) return;
     setIsAdded(true);
     setTimeout(() => setIsAdded(false), 2000);
-    // TODO: integreate with cart context/store
+    addToCart(food.id, quantity);
   };
 
   if (isLoading) {

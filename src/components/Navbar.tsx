@@ -11,15 +11,25 @@ import {
   Settings,
   LogOut,
 } from "lucide-react";
+import useUserIdStore from "@/app/api/store/userId";
+import { useCart } from "@/app/hooks/useCart";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const { cartCount } = useCart();
 
   const links = [
     { name: "Home", href: "/", icon: Home },
     { name: "Foods", href: "/foods", icon: UtensilsCrossed },
-    { name: "Your Cart", href: "/cart", icon: ShoppingCart },
+    {
+      name: "Your Cart",
+      href: "/cart",
+      icon: ShoppingCart,
+      count: cartCount,
+    },
   ];
+
+  const userId = useUserIdStore((state) => state.userId);
 
   return (
     <header className="h-20 bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-40 px-4 md:px-8">
@@ -49,6 +59,11 @@ const Navbar = () => {
                 }`}
                 title={link.name}>
                 <Icon size={20} strokeWidth={isActive ? 2.5 : 2} />
+                {link.count !== undefined && link.count > 0 && (
+                  <span className="absolute -top-1 -right-1 w-5 h-5 flex items-center justify-center bg-red-500 text-white text-[10px] font-bold rounded-full ring-2 ring-white">
+                    {link.count}
+                  </span>
+                )}
               </Link>
             );
           })}
@@ -58,6 +73,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3 md:gap-6">
           <button className="relative p-2 rounded-full hover:bg-gray-100 transition-colors text-gray-500 hover:text-gray-700">
             <Bell size={20} />
+            <span>{userId}</span>
             <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full ring-2 ring-white"></span>
           </button>
 

@@ -3,6 +3,7 @@
 import { useState, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
+import useUserIdStore from "@/app/api/store/userId";
 
 function LoginForm() {
   const router = useRouter();
@@ -41,7 +42,7 @@ function LoginForm() {
         throw new Error(data.error || "Invalid credentials");
       }
 
-      localStorage.setItem("userInfo", JSON.stringify(data.user));
+      useUserIdStore.setState({ userId: data.user._id });
       router.push("/");
     } catch (err: Error | unknown) {
       setError(err instanceof Error ? err.message : "Something went wrong");
