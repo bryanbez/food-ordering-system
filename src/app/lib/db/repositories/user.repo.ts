@@ -1,10 +1,25 @@
 import UserModel from "../models/user.model";
 import type { RegisterUserInput } from "@/app/types/authTypes";
+import { Types } from "mongoose";
 
 export async function getUserByIdQuery(id: string) {
   try {
-    const user = await UserModel.findById(id);
-    return user;
+    const user = await UserModel.aggregate([
+      {
+        $match: { _id: new Types.ObjectId(id) },
+      },
+      {
+        $project: {
+          name: 1,
+          email: 1,
+          address: 1,
+          phone: 1,
+          createdAt: 1,
+          updatedAt: 1,
+        },
+      },
+    ]);
+    return user[0] ?? null;
   } catch (error) {
     console.error("Error fetching user by ID:", error);
     throw error;

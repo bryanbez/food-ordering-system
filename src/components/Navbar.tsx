@@ -13,10 +13,14 @@ import {
 } from "lucide-react";
 import useUserIdStore from "@/app/api/store/userId";
 import { useCart } from "@/app/hooks/useCart";
+import useUser from "@/app/hooks/useUser";
 
 const Navbar = () => {
   const pathname = usePathname();
   const { cartCount } = useCart();
+
+  const userId = useUserIdStore((state) => state.userId);
+  const { user, logoutUser } = useUser(userId ?? "");
 
   const links = [
     { name: "Home", href: "/", icon: Home },
@@ -29,7 +33,7 @@ const Navbar = () => {
     },
   ];
 
-  const userId = useUserIdStore((state) => state.userId);
+  // const userId = useUserIdStore((state) => state.userId);
 
   return (
     <header className="h-20 bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-40 px-4 md:px-8">
@@ -73,7 +77,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3 md:gap-6">
           <button className="relative p-2 rounded-full hover:bg-gray-100 transition-colors text-gray-500 hover:text-gray-700">
             <Bell size={20} />
-            <span>{userId}</span>
+
             <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full ring-2 ring-white"></span>
           </button>
 
@@ -87,7 +91,7 @@ const Navbar = () => {
               <div className="absolute right-0 top-12 w-48 bg-white rounded-xl shadow-lg border border-gray-100 p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right z-50">
                 <div className="px-3 py-2 border-b border-gray-100 mb-2">
                   <p className="text-sm font-semibold text-gray-800">
-                    John Doe
+                    {user?.name}
                   </p>
                   <p className="text-xs text-green-500">Online</p>
                 </div>
@@ -98,7 +102,9 @@ const Navbar = () => {
                   <Settings size={16} />
                   Settings
                 </Link>
-                <button className="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-500 hover:bg-red-50 rounded-lg transition-colors mt-1">
+                <button
+                  onClick={logoutUser}
+                  className="w-full cursor-pointer flex items-center gap-2 px-3 py-2 text-sm text-red-500 hover:bg-red-50 rounded-lg transition-colors mt-1">
                   <LogOut size={16} />
                   Logout
                 </button>

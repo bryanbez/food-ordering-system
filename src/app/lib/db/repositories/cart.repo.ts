@@ -1,6 +1,5 @@
 import CartModel from "../models/cart.model";
 import type { PopulatedCartDocument } from "@/app/types/cartTypes";
-// import logger from "../../logs/logger";
 
 export async function getAllCartsQuery(
   userId: string,
@@ -61,19 +60,6 @@ export async function getAllCartsQuery(
   }
 }
 
-export async function addToCartQuery(
-  userId: string,
-  items: { foodId: string; quantity: number }[],
-) {
-  try {
-    const cart = await CartModel.create({ userId, items });
-    return items;
-  } catch (error) {
-    console.error("Error adding to cart:", error);
-    throw error;
-  }
-}
-
 export async function calculateTotalAmountQuery(
   userId: string,
   cartItemIds: string[],
@@ -130,19 +116,46 @@ export async function countCartContentQuery(userId: string) {
   return result[0]?.itemCount ?? 0;
 }
 
-export async function updateCartQuery(
+export type CartItem = { foodId: string; quantity: number };
+
+export async function saveCartItemQuery(
   userId: string,
-  items: { foodId: string; quantity: number }[],
+  items: CartItem[],
+  cartId?: string,
 ) {
   try {
-    const cart = await CartModel.findOneAndUpdate(
-      { userId },
-      { items },
+    const item = items[0];
+
+    if (!cartId) {
+      const newCart = await CartModel.create({
+        userId,
+        items: [item],
+      });
+      return newCart;
+    }
+
+    const updatedCart = await CartModel.findOneAndUpdate(
+      { userId, cartId, "items.foodId": item.foodId },
+      { $inc: { "items.$[elem].quantity": item.quantity } },
+      {
+        new: true,
+        arrayFilters: [{ "elem.foodId": item.foodId }],
+      },
+    );
+
+    if (updatedCart) {
+      return updatedCart;
+    }
+
+    const pushedCart = await CartModel.findOneAndUpdate(
+      { userId, cartId },
+      { $push: { items: item } },
       { new: true },
     );
-    return cart;
+
+    return pushedCart;
   } catch (error) {
-    console.error("Error updating cart:", error);
+    console.error("Error saving cart item:", error);
     throw error;
   }
 }

@@ -21,7 +21,7 @@ export async function loginUserService(userData: LoginUserInput) {
     }
     const isPasswordValid = await bcrypt.compare(
       userData.password,
-      user.password
+      user.password,
     );
     if (!isPasswordValid) {
       throw new Error("Invalid password");
@@ -47,7 +47,7 @@ export async function createUserService(userData: RegisterUserInput) {
 
 export async function updateUserService(
   id: string,
-  userData: RegisterUserInput
+  userData: RegisterUserInput,
 ) {
   try {
     const hashedPassword = await bcrypt.hash(userData.password, 10);
@@ -56,6 +56,22 @@ export async function updateUserService(
     return updatedUser;
   } catch (error) {
     console.error("Error updating user:", error);
+    throw error;
+  }
+}
+
+export async function updateUserProfileService(
+  id: string,
+  userData: Partial<RegisterUserInput>,
+) {
+  try {
+    const updatedUser = await userRepo.updateUserQuery(
+      id,
+      userData as RegisterUserInput,
+    );
+    return updatedUser;
+  } catch (error) {
+    console.error("Error updating user profile:", error);
     throw error;
   }
 }

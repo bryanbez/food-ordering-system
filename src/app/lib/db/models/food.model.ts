@@ -16,13 +16,13 @@ const FoodSchema = new Schema<FoodDocument>(
     image: { type: String, required: true },
     category: { type: String, required: false },
     isAvailable: { type: Boolean, required: true },
-    createdAt: { type: Date, required: true },
-    updatedAt: { type: Date, required: true },
+    createdAt: { type: Date },
+    updatedAt: { type: Date },
   },
   {
     collection: "foods",
     timestamps: true,
-  }
+  },
 );
 
 const FoodModel = models.Food || model<FoodDocument>("Food", FoodSchema);

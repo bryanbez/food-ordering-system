@@ -10,12 +10,15 @@ export async function getAllCartsService(
   return carts;
 }
 
-export async function addToCartService(
+export type CartItem = { foodId: string; quantity: number };
+
+export async function saveToCartService(
   userId: string,
-  items: { foodId: string; quantity: number }[],
-): Promise<{ foodId: string; quantity: number }[]> {
-  const cart = await CartRepo.addToCartQuery(userId, items);
-  return cart;
+  items: CartItem[],
+  cartId?: string,
+): Promise<CartItem> {
+  const result = await CartRepo.saveCartItemQuery(userId, items, cartId);
+  return result;
 }
 
 export async function calculateTotalAmountService(
@@ -32,14 +35,6 @@ export async function calculateTotalAmountService(
 export async function getAllCartCountService(userId: string) {
   const countCartContent = await CartRepo.countCartContentQuery(userId);
   return countCartContent;
-}
-
-export async function updateCartService(
-  userId: string,
-  items: { foodId: string; quantity: number }[],
-): Promise<{ foodId: string; quantity: number }[]> {
-  const cart = await CartRepo.updateCartQuery(userId, items);
-  return cart;
 }
 
 export async function deleteCartService(

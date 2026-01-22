@@ -28,7 +28,7 @@ export default function DisplaySpecificFood({
   const router = useRouter();
   const [quantity, setQuantity] = useState(1);
   const [isAdded, setIsAdded] = useState(false);
-  const { addToCart } = useCart();
+  const { saveCartItem } = useCart();
 
   const handleQuantityId = (type: "inc" | "dec") => {
     if (type === "dec" && quantity > 1) setQuantity((q) => q - 1);
@@ -39,7 +39,7 @@ export default function DisplaySpecificFood({
     if (!food) return;
     setIsAdded(true);
     setTimeout(() => setIsAdded(false), 2000);
-    addToCart(food.id, quantity);
+    saveCartItem(null, food.id, quantity);
   };
 
   if (isLoading) {

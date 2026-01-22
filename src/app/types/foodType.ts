@@ -9,6 +9,6 @@ export interface FoodDocument {
   image: string;
   category?: string;
   isAvailable: boolean;
-  createdAt: Date;
-  updatedAt: Date;
+  createdAt?: Date;
+  updatedAt?: Date;
 }

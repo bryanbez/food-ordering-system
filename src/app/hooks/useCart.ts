@@ -16,10 +16,6 @@ export function useCart() {
   const [manualSelection, setManualSelection] = useState<Set<string> | null>(
     null,
   );
-
-  if (!userId) {
-    throw new Error("User ID not found");
-  }
   // Main cart data
   const { data, error, isLoading, mutate } = useSWR<{ cart: CartDocument[] }>(
     userId ? `/api/cart/${userId}` : null,
@@ -77,31 +73,33 @@ export function useCart() {
     [userId],
   );
 
-  const addToCart = async (foodId: string, quantity: number) => {
+  const saveCartItem = async (
+    cartId: string | null,
+    foodId: string,
+    quantity: number,
+  ) => {
     if (!userId) {
       throw new Error("User ID not found");
     }
-    await fetch(`/api/cart/${userId}`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ userId, foodId, quantity }),
-    });
-    mutate();
-    mutateCount();
-  };
 
-  const updateCart = async (foodId: string, quantity: number) => {
-    if (!userId) {
-      throw new Error("User ID not found");
-    }
+    // Validation: Check if the item is already in any of the user's carts
+    const existingCart = data?.cart?.find((c: CartDocument) =>
+      c.items.some((i: { foodId: string }) => i.foodId === foodId),
+    );
+
+    const method = existingCart ? "PUT" : "POST";
+    const targetCartId = existingCart ? existingCart.cartId : cartId;
+
     await fetch(`/api/cart/${userId}`, {
-      method: "PUT",
+      method,
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ userId, foodId, quantity }),
+      body: JSON.stringify({
+        userId,
+        cartId: targetCartId,
+        item: { foodId, quantity },
+      }),
     });
     mutate();
     mutateCount();
@@ -129,8 +127,7 @@ export function useCart() {
     setSelectedCartIds,
     error,
     isLoading,
-    addToCart,
-    updateCart,
+    saveCartItem,
     deleteCart,
     calculateTotalAmount,
   };
